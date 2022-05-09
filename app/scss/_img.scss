@@ -1,0 +1,21 @@
+img {
+	display: block;
+	font-family: sans-serif;
+	font-weight: 300;
+	position: relative;
+	text-align: center;
+}
+
+/* if image broken */
+
+img:before {
+	content: "Oops, the image is broken :(";
+	display: block;
+	margin-bottom: 10px;
+}
+
+img::after {
+	content: "(url: "attr(src) ")";
+	display: block;
+	font-size: 12px;
+}

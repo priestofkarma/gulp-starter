@@ -1,0 +1,70 @@
+/* Grid */
+
+.xgrid::before {
+	--grid-color: rgba(255, 51, 0, 0.07);
+	--grid-sides: 10px;
+	--grid-gutter: 10px;
+	--grid-columns: 4;
+	--grid-column-width: calc((100% - var(--grid-gutter) * var(--grid-columns)) / var(--grid-columns));
+
+	content: "";
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: calc((100% - var(--wrapper)) / 2);
+	pointer-events: none;
+	z-index: 9999;
+	width: 100%;
+	max-width: var(--wrapper);
+
+	border: solid transparent;
+	border-width: 0 calc(var(--grid-sides) - var(--grid-gutter) / 2);
+
+	background-image: repeating-linear-gradient(to right,
+			transparent 0,
+			transparent calc(var(--grid-gutter) / 2),
+			var(--grid-color) calc(var(--grid-gutter) / 2),
+			var(--grid-color) calc(var(--grid-column-width) + var(--grid-gutter) / 2),
+			transparent calc(var(--grid-column-width) + var(--grid-gutter) / 2),
+			transparent calc(var(--grid-column-width) + var(--grid-gutter)));
+
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 576px) {
+	.xgrid::before {
+		--grid-columns: 6;
+		// --wrapper: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.xgrid::before {
+		--grid-gutter: 20px;
+		--grid-columns: 6;
+		// --wrapper: 640px;
+	}
+}
+
+@media (min-width: 992px) {
+	.xgrid::before {
+		// --wrapper: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.xgrid::before {
+		--grid-gutter: 20px;
+		--grid-columns: 12;
+		// --wrapper: 1160px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.xgrid::before {
+		--grid-sides: 10px;
+		--grid-gutter: 30px;
+		// --wrapper: 1230px;
+	}
+}

@@ -1,0 +1,32 @@
+:root {
+	/* sizes */
+	--gap: 2rem;
+	--wrapper: 100%;
+	--section-padding: 50px;
+	--header-height: 64px;
+	scroll-behavior: auto;
+
+	/* colors */
+	--bs-body-color: #222222;
+	--bs-primary: #2068d2;
+	--bs-secondary: #7fb2e0;
+	--bs-gray: #d9d9de;
+	--transition: cubic-bezier(0.53, 0.04, 0.16, 0.98);
+
+	/* fonts */
+	--bs-body-font-family: "Ruberoid", var(--bs-font-sans-serif);
+	--header-font: "BlissPro", var(--bs-font-sans-serif);
+	--bs-body-font-weight: 500;
+	--h1-font: 2rem;
+	--h2-font: 1.5rem;
+	--h3-font: 1.3rem;
+	--h4-font: 1.25rem;
+	--h5-font: 1.125rem;
+	--h6-font: 1rem;
+}
+
+@mixin bgi($size: cover, $position: center, $repeat: no-repeat) {
+	background-size: $size;
+	background-position: $position;
+	background-repeat: $repeat;
+}

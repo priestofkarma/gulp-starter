@@ -1,0 +1,21 @@
+dl,
+ol,
+ul {
+	list-style: none;
+	margin-top: 0;
+	padding-left: 0;
+}
+
+dl,
+ol,
+ul {
+	margin: 1rem 0 1rem 0.5em;
+}
+
+ol {
+	list-style: decimal inside;
+}
+
+ul {
+	list-style: disc inside;
+}

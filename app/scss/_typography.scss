@@ -1,0 +1,66 @@
+// Typography
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+b,
+strong {
+	font-weight: bold;
+}
+
+p {
+	margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	--bs-body-font-weight: 500;
+	font-family: var(--header-font);
+	font-weight: var(--bs-body-font-weight);
+	line-height: 1.2;
+	margin-bottom: 0.85rem;
+
+	* {
+		font: inherit;
+		font-size: 100%;
+		margin: 0;
+	}
+}
+
+h1,
+.h1 {
+	font-size: var(--h1-font);
+}
+
+h2,
+.h2 {
+	font-size: var(--h2-font);
+}
+
+h3,
+.h3 {
+	font-size: var(--h3-font);
+}
+
+h4,
+.h4 {
+	font-size: var(--h4-font);
+}
+
+h5,
+.h5 {
+	font-size: var(--h5-font);
+}
+
+h6,
+.h6 {
+	font-size: var(--h6-font);
+}
