@@ -78,7 +78,6 @@ $(document).ready(function () {
 				gsap.to(window, {
 					duration: 1,
 					ease: "Power4.out",
-					delay: 1.5,
 					scrollTo: {
 						y: hash,
 						offsetY: getHeaderHeight,
