@@ -28,44 +28,7 @@ $(document).ready(function () {
 			// $("#modal-menu").attr("aria-hidden", true);
 		}
 	});
-
-
-	/* smooth scroll to anchor */
-
-	if ($("body").hasClass("home")) {
-
-		$("[data-smooth-scroll]").on("click", smoothScroll);
-		$(".modal-menu__nav ul").on("click", "a", smoothScroll);
-
-		function smoothScroll() {
-			let hash = $(this)[0].hash;
-			if (hash) {
-				menutl.reversed(!menutl.reversed())
-				gsap.to(window, {
-					duration: 1,
-					ease: "Power4.out",
-					delay: 1.5,
-					scrollTo: {
-						y: hash,
-						offsetY: getHeaderHeight,
-						autoKill: true,
-					}
-				});
-
-				$("body").removeClass("menu--opened");
-				return false;
-			}
-		}
-	}
-
-	/* get year */
-	let currentDate = new Date(),
-		currentyeaer = currentDate.getFullYear(),
-		copyrightElem = document.querySelector("#footer-year");
-
-	// copyrightElem.textContent = currentyeaer;
-
-
+	
 	/* fix viewport on macos */
 
 	let scrollbarWidth = "";
@@ -100,6 +63,44 @@ $(document).ready(function () {
 
 	getHeaderHeight();
 
+
+
+	/* smooth scroll to anchor */
+
+	if ($("body").hasClass("home")) {
+
+		$("[data-smooth-scroll]").on("click", smoothScroll);
+		$(".modal-menu__nav ul").on("click", "a", smoothScroll);
+
+		function smoothScroll() {
+			let hash = $(this)[0].hash;
+			if (hash) {
+				gsap.to(window, {
+					duration: 1,
+					ease: "Power4.out",
+					delay: 1.5,
+					scrollTo: {
+						y: hash,
+						offsetY: getHeaderHeight,
+						autoKill: true,
+					}
+				});
+
+				$("body").removeClass("menu--opened");
+				return false;
+			}
+		}
+	}
+
+	/* get year */
+	let currentDate = new Date(),
+		currentyeaer = currentDate.getFullYear(),
+		copyrightElem = document.querySelector("#footer-year");
+
+	// copyrightElem.textContent = currentyeaer;
+
+
+	
 	/* ----------- sliders ------------ */
 
 
