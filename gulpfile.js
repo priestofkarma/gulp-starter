@@ -9,6 +9,7 @@ const cleancss = require('gulp-clean-css');
 const newer = require('gulp-newer');
 const del = require('del');
 const include = require('gulp-file-include');
+const gcmq = require('gulp-group-css-media-queries');
 
 
 function html() {
@@ -53,6 +54,7 @@ function styles() {
 		.pipe(sass())
 		.pipe(concat('main.min.css'))
 		.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
+		.pipe(gcmq())
 		.pipe(cleancss({ level: { 1: { specialComments: 0 } }/* , format: 'beautify' */ }))
 		.pipe(dest('app/css/'))
 		.pipe(browserSync.stream());
@@ -62,6 +64,7 @@ function stylesdev() {
 	return src('app/scss/**/*.scss')
 		.pipe(sass())
 		.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: false }))
+		.pipe(gcmq())
 		.pipe(dest('dist/css/'))
 		.pipe(browserSync.stream());
 }
