@@ -1,6 +1,6 @@
 <h1>Starter</h1>
 
-<h2>How to use OptimizedHTML</h2>
+<h2>How to use starter</h2>
 
 <ol>
 	<li><a href="https://github.com/priestofkarma/gulp-starter/archive/refs/heads/master.zip">Download</a> <strong>gulp-starter</strong> from GitHub</li>
