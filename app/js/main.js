@@ -28,7 +28,7 @@ $(document).ready(function () {
 			// $("#modal-menu").attr("aria-hidden", true);
 		}
 	});
-	
+
 	/* fix viewport on macos */
 
 	let scrollbarWidth = "";
@@ -99,7 +99,7 @@ $(document).ready(function () {
 	// copyrightElem.textContent = currentyeaer;
 
 
-	
+
 	/* ----------- sliders ------------ */
 
 
@@ -248,3 +248,5 @@ $(document).ready(function () {
 	}); */
 
 });
+
+

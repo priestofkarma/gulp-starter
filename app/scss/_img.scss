@@ -1,8 +1,11 @@
 img {
 	display: block;
+	max-width: 100%;
+	
+	position: relative;
+	
 	font-family: sans-serif;
 	font-weight: 300;
-	position: relative;
 	text-align: center;
 }
 

@@ -1,3 +1,13 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
 .wpcf7-form br,
 span.wpcf7-not-valid-tip,
 div.wpcf7-validation-errors,
@@ -12,12 +22,9 @@ input.wpcf7-not-valid {
 	border-color: red !important;
 }
 
-html {
-	height: 100%;
-}
-
 html,
 body {
+	height: 100%;
 	text-size-adjust: 100%;
 	-o-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -40,10 +47,34 @@ body {
 	min-height: 100%;
 }
 
+img,
+picture,
+video,
+canvas,
 svg {
-	display: inline-block;
+	display: block;
 	max-width: 100%;
+}
+
+svg {
 	height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
 }
 
 #site-wrapper {

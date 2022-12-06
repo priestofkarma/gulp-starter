@@ -1,4 +1,4 @@
 @import "_mixins/font-face";
 
-@include font-face("BlissPro", "BlissPro Light", "BlissPro-Medium", "../fonts/BlissPro/BlissPro-Medium", 500);
-@include font-face("Ruberoid", "Ruberoid Regular", "Ruberoid-Regular", "../fonts/Ruberoid/Ruberoid-Regular", 400);
+@include font-face("BlissPro", "../fonts/BlissPro/BlissPro-Medium", 500, normal, woff);
+@include font-face("Ruberoid", "../fonts/Ruberoid/Ruberoid-Regular", 400, normal, woff);

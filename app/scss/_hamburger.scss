@@ -1,19 +1,21 @@
 .hamburger {
-	padding: 8px 4px;
 	display: inline-flex;
 	align-items: center;
+
+	padding: 8px 4px;
+	margin: 0;
+
 	cursor: pointer;
-	transition-property: opacity, filter;
-	transition-duration: 0.15s;
-	transition-timing-function: linear;
+	border: 0;
 	font: inherit;
 	color: inherit;
 	text-transform: none;
 	background-color: transparent;
-	border: 0;
-	margin: 0;
 	overflow: visible;
-
+	transition-property: opacity, filter;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
+	
 	&:hover {
 		.hamburger-inner::before {
 			transform: rotate(-3deg);
