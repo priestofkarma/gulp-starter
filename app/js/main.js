@@ -32,12 +32,18 @@ $(document).ready(function () {
 	/* fix viewport on macos */
 
 	let scrollbarWidth = "";
-	const doc = document.documentElement
+	const doc = document.documentElement;
+
 	const viewportHeight = () => {
 		doc.style.setProperty("--viewportHeight", `${window.innerHeight}px`)
 	}
 
+	const viewportWidth = () => {
+		doc.style.setProperty("--viewportWidth", `${window.innerWidth}px`)
+	}
+
 	viewportHeight();
+	viewportWidth();
 	handleFullSizing();
 
 	function handleFullSizing() {
@@ -57,6 +63,7 @@ $(document).ready(function () {
 
 	window.addEventListener("resize", function () {
 		viewportHeight();
+		viewportWidth();
 		handleFullSizing();
 		getHeaderHeight();
 	});
