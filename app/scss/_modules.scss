@@ -8,6 +8,7 @@
 	margin: 0;
 }
 
+
 .wpcf7-form br,
 span.wpcf7-not-valid-tip,
 div.wpcf7-validation-errors,
@@ -33,14 +34,15 @@ body {
 }
 
 body {
+	-webkit-font-smoothing: antialiased;
 	margin: 0;
-	font-family: var(--bs-body-font-family);
-	font-size: var(--bs-body-font-size);
-	font-weight: var(--bs-body-font-weight);
-	line-height: var(--bs-body-line-height);
-	color: var(--bs-body-color);
-	text-align: var(--bs-body-text-align);
-	background-color: var(--bs-body-bg);
+	font-family: var(--body-font-family);
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: var(--body-text-color);
+	text-align: left;
+	background-color: var(--body-bg);
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
@@ -91,7 +93,6 @@ h6 {
 	max-width: 2560px;
 	margin: 0 auto;
 	display: block;
-	// padding-top: var(--header-height);
 }
 
 .footer {
@@ -99,17 +100,11 @@ h6 {
 	grid-row-end: 3;
 }
 
-.container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm {
+.container {
 	width: 100%;
-	max-width: var(--wrapper);
-	padding-right: var(--bs-gutter-x, 0.75rem);
-	padding-left: var(--bs-gutter-x, 0.75rem);
+	max-width: var(--container-width);
+	padding-right: var(--container-padding);
+	padding-left: var(--container-padding);
 	margin-right: auto;
 	margin-left: auto;
 }

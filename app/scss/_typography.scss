@@ -22,17 +22,11 @@ h6,
 .h4,
 .h5,
 .h6 {
-	--bs-body-font-weight: 500;
 	font-family: var(--header-font);
-	font-weight: var(--bs-body-font-weight);
-	line-height: 1.2;
-	margin-bottom: 0.85rem;
+	font-weight: 600;
+	line-height: 1.3;
+	margin-bottom: 0;
 
-	* {
-		font: inherit;
-		font-size: 100%;
-		margin: 0;
-	}
 }
 
 h1,

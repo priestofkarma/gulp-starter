@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
-	gsap.registerPlugin(ScrollTrigger);
+	// gsap.registerPlugin(ScrollTrigger);
 
 	let lazyLoadInstance = new LazyLoad({});
 
-	MicroModal.init({
+/* 	MicroModal.init({
 		// onShow: modal => console.info(`${modal.id} is shown`), 
 		// onClose: modal => console.info(`${modal.id} is hidden`), 
 		// openTrigger: 'data-custom-open', 
@@ -15,7 +15,7 @@ $(document).ready(function () {
 		awaitOpenAnimation: true,
 		awaitCloseAnimation: true,
 		debugMode: false
-	});
+	}); */
 
 
 
@@ -71,13 +71,12 @@ $(document).ready(function () {
 	getHeaderHeight();
 
 
-
 	/* smooth scroll to anchor */
 
 	if ($("body").hasClass("home")) {
 
 		$("[data-smooth-scroll]").on("click", smoothScroll);
-		$(".modal-menu__nav ul").on("click", "a", smoothScroll);
+		// $(".modal-menu__nav ul").on("click", "a", smoothScroll);
 
 		function smoothScroll() {
 			let hash = $(this)[0].hash;
@@ -97,14 +96,6 @@ $(document).ready(function () {
 			}
 		}
 	}
-
-	/* get year */
-	let currentDate = new Date(),
-		currentyeaer = currentDate.getFullYear(),
-		copyrightElem = document.querySelector("#footer-year");
-
-	// copyrightElem.textContent = currentyeaer;
-
 
 
 	/* ----------- sliders ------------ */
@@ -144,25 +135,7 @@ $(document).ready(function () {
 		});
 	} */
 
-	/* date */
-	let date = new Date();
 
-	let weekdays = [
-		"Sunday",
-		"Monday",
-		"Tuesday",
-		"Wednesday",
-		"Thursday",
-		"Friday",
-		"Saturday",
-	];
-
-	let weekday = weekdays[date.getDay()];
-
-	/* if ($(`[data-weekday="${weekday}"]`).length) {
-		let weekdayElem = $(`[data-weekday="${weekday}"]`);
-		weekdayElem.addClass("today");
-	} */
 
 	/* parallax */
 
@@ -233,19 +206,7 @@ $(document).ready(function () {
 		});
 	});
 
-	/* btnReturn */
-
-	let btnReturn = document.querySelectorAll("[data-return]");
-
-	if (btnReturn) {
-		btnReturn.forEach((item) => {
-			item.addEventListener("click", (event) => {
-				event.preventDefault();
-				window.history.back();
-			});
-		});
-	}
-
+	
 	/* thanks modal */
 	/* $(".wpcf7").on('wpcf7mailsent', function (event) {
 		MicroModal.show('modal-thanks');
