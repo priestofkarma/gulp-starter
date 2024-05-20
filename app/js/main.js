@@ -2,21 +2,18 @@ $(document).ready(function () {
 
 	// gsap.registerPlugin(ScrollTrigger);
 
-	let lazyLoadInstance = new LazyLoad({});
-
-/* 	MicroModal.init({
-		// onShow: modal => console.info(`${modal.id} is shown`), 
-		// onClose: modal => console.info(`${modal.id} is hidden`), 
-		// openTrigger: 'data-custom-open', 
-		// closeTrigger: 'data-custom-close',
-		// openClass: 'is-open', 
-		disableScroll: true,
-		disableFocus: false,
-		awaitOpenAnimation: true,
-		awaitCloseAnimation: true,
-		debugMode: false
-	}); */
-
+	/* 	MicroModal.init({
+			// onShow: modal => console.info(`${modal.id} is shown`), 
+			// onClose: modal => console.info(`${modal.id} is hidden`), 
+			// openTrigger: 'data-custom-open', 
+			// closeTrigger: 'data-custom-close',
+			// openClass: 'is-open', 
+			disableScroll: true,
+			disableFocus: false,
+			awaitOpenAnimation: true,
+			awaitCloseAnimation: true,
+			debugMode: false
+		}); */
 
 
 	$(".hamburger").click(function () {
@@ -29,8 +26,7 @@ $(document).ready(function () {
 		}
 	});
 
-	/* fix viewport on macos */
-
+	/* --- fix viewport on macos --- */
 	let scrollbarWidth = "";
 	const doc = document.documentElement;
 
@@ -71,12 +67,12 @@ $(document).ready(function () {
 	getHeaderHeight();
 
 
-	/* smooth scroll to anchor */
+	/* --- smooth scroll to anchor --- */
 
 	if ($("body").hasClass("home")) {
 
 		$("[data-smooth-scroll]").on("click", smoothScroll);
-		// $(".modal-menu__nav ul").on("click", "a", smoothScroll);
+		// $(".modal-menu-nav ul").on("click", "a", smoothScroll);
 
 		function smoothScroll() {
 			let hash = $(this)[0].hash;
@@ -99,7 +95,6 @@ $(document).ready(function () {
 
 
 	/* ----------- sliders ------------ */
-
 
 	/* equipe-slider */
 
@@ -206,7 +201,7 @@ $(document).ready(function () {
 		});
 	});
 
-	
+
 	/* thanks modal */
 	/* $(".wpcf7").on('wpcf7mailsent', function (event) {
 		MicroModal.show('modal-thanks');

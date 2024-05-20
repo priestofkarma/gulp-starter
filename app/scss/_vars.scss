@@ -15,14 +15,14 @@
 	/* --- Fonts --- */
 	--font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 	--body-font-family: "Ubuntu", var(--font-sans-serif);
-	--header-font: "Ubuntu", var(--bs-font-sans-serif);
+	--header-font: "Unbounded", var(--font-sans-serif);
 
-	--h1-font: 5rem;
-	--h2-font: 4rem;
-	--h3-font: 3rem;
-	--h4-font: 2rem;
-	--h5-font: 1.5rem;
-	--h6-font: 1.25rem;
+	--h1-font-size: 5rem;
+	--h2-font-size: 4rem;
+	--h3-font-size: 3rem;
+	--h4-font-size: 2rem;
+	--h5-font-size: 1.5rem;
+	--h6-font-size: 1.25rem;
 }
 
 /* --- Background-image --- */

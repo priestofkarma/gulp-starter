@@ -1,4 +1,9 @@
 @import "_mixins/font-face";
 
-@include font-face("BlissPro", "../fonts/BlissPro/BlissPro-Medium", 500, normal, woff);
-@include font-face("Ruberoid", "../fonts/Ruberoid/Ruberoid-Regular", 400, normal, woff);
+@include font-face("Ubuntu", "../fonts/Ubuntu/Ubuntu-Regular", 400, normal, ttf);
+@include font-face("Ubuntu", "../fonts/Ubuntu/Ubuntu-Medium", 500, normal, ttf);
+@include font-face("Ubuntu", "../fonts/Ubuntu/Ubuntu-SemiBold", 600, normal, ttf);
+
+@include font-face("Unbounded", "../fonts/Unbounded/Unbounded-Regular", 400, normal, ttf);
+@include font-face("Unbounded", "../fonts/Unbounded/Unbounded-Semibold", 600, normal, ttf);
+@include font-face("Unbounded", "../fonts/Unbounded/Unbounded-Bold", 700, normal, ttf);
